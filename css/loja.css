@@ -1,0 +1,147 @@
+/* Estilo do Conteúdo Principal */
+.main-content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+
+/* Sidebar de Filtros */
+.filter-sidebar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 25%; /* Ocupa 25% da largura total */
+    margin-bottom: 20px;
+}
+
+.filter-sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.filter-sidebar form {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-sidebar label {
+    margin-top: 10px;
+}
+
+.filter-sidebar select,
+.filter-sidebar button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #2c3e50; /* Cinza Escuro */
+    border-radius: 5px;
+}
+
+.filter-sidebar button {
+    background-color: #e67e22; /* Laranja */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-sidebar button:hover {
+    background-color: #d35400; /* Tom mais escuro de laranja */
+}
+
+/* Lista de Lojas */
+.store-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 50%; /* Ocupa 50% da largura total */
+    margin-bottom: 20px;
+}
+
+.store-list h2 {
+    margin-bottom: 20px;
+}
+
+.store-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.store-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.store-item h3 {
+    margin: 10px 0 5px;
+}
+
+.store-item p {
+    margin: 0 0 10px;
+}
+
+.store-item a {
+    color: #e67e22; /* Laranja */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.store-item a:hover {
+    color: #d35400; /* Tom mais escuro de laranja */
+    text-decoration: underline;
+}
+
+/* Anúncios Laterais */
+.ads {
+    display: flex;
+    flex-wrap: wrap; /* Anúncios movem-se para a próxima linha conforme necessário */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 100%; /* Ocupa 100% da largura */
+    margin-top: 20px;
+}
+
+.ad-item {
+    flex: 1 1 calc(33.33% - 20px); /* 3 anúncios por linha */
+    margin: 10px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsividade para Telas Menores */
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column; /* Em telas menores, as divs empilham-se */
+    }
+
+    .filter-sidebar,
+    .store-list {
+        flex: 1 1 100%; /* Ocupa toda a largura */
+    }
+}
+
+@media (max-width: 768px) {
+    .ad-item {
+        flex: 1 1 calc(50% - 20px); /* 2 anúncios por linha em telas menores */
+    }
+
+    .filter-sidebar,
+    .store-list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .ad-item {
+        flex: 1 1 100%; /* Um anúncio por linha em telas muito pequenas */
+    }
+}

@@ -1,0 +1,76 @@
+
+/* Estilo do Conteúdo Principal */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section label {
+    margin-top: 10px;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #2c3e50; /* Cinza Escuro */
+    border-radius: 5px;
+}
+
+.form-section button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e67e22; /* Laranja */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #d35400; /* Tom mais escuro de laranja */
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.toggle-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #e67e22; /* Laranja */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-buttons button:hover {
+    background-color: #d35400; /* Tom mais escuro de laranja */
+}
