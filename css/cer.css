@@ -11,7 +11,6 @@ body {
 header {
     background-color: #e74c3c; /* Vermelho Claro */
     color: white;
-    padding: 10px; /* Altura reduzida do cabeçalho */
     box-sizing: border-box; /* Inclui padding na altura total */
 }
 
@@ -22,8 +21,10 @@ header .top-row {
 }
 
 header .logo {
-    margin-bottom: 10px; /* Espaçamento abaixo da logo */
+    align-items: center;
+    justify-content: center;
 }
+
 
 header .logo img {
     height: 100px; /* Altura reduzida da logo */
@@ -41,7 +42,7 @@ nav .nav {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 nav .nav:hover {
